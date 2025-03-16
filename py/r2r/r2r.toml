@@ -112,9 +112,12 @@ provider = "simple"
 [email]
 provider = "console_mock" # `smtp` | `sendgrid` supported
 
- R2R_POSTGRES_USER=idkyxcrjws
- R2R_POSTGRES_PASSWORD=mAE$SLJsrmxvVzN5
- R2R_POSTGRES_HOST=ragapp-server.postgres.database.azure.com
- R2R_POSTGRES_PORT=5432
- R2R_POSTGRES_DBNAME=postgres
+ [database]
+provider = "postgres"  # currently only `postgres` is supported
+# Optional parameters (typically set in the environment instead):
+user     = "idkyxcrjws"
+password = "mAE$SLJsrmxvVzN5"
+host     = "ragapp-server.postgres.database.azure.com"
+port     = 5432           # Use a numeric port (not quoted)
+db_name  = "postgres"
 
