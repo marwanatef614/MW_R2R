@@ -66,6 +66,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'MWRAG'
+          app-name: 'RagMW'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C926EC377D37400A81023B635EE58F47 }}
